@@ -10,3 +10,6 @@ if B5 ==B5c:
     print(True)
 else:
     print(False)
+
+#不用if，直接比较运算的结果就是一个布尔值
+#print (B5 == B5c)
