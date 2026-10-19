@@ -3,11 +3,12 @@
 # 提示：def f(*args)，args 是一个元组
 
 def f(*args):
+    y = 0
     if not args:
         return 0
     for n in args:
-        n += n
-    return n
+        y += n
+    return y
 
 print(f(1,2,3))
 print (f())
