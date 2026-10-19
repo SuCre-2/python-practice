@@ -26,12 +26,15 @@ def my_abs(x):
 import math
 
 def quadratic(a,b,c):
+    if a == 0:
+        raise ValueError("a 不能为 0，这不是二次方程")
+
     delta = b*b - 4*a*c          # 先算判别式
     if delta < 0:
         return None              # 没有实数根，返回 None
     
-    x1 = ((-b)+(math.sqrt(b*b-4*a*c)))/(2*a)
-    x2 = ((-b)-(math.sqrt(b*b-4*a*c)))/(2*a)
+    x1 = ((-b)+(math.sqrt(delta)))/(2*a)
+    x2 = ((-b)-(math.sqrt(delta)))/(2*a)
     return x1,x2
 
 a= int(input("输入a:"))
@@ -42,5 +45,5 @@ y=quadratic(a,b,c)
 if y is None:
     print("无实数根")
 else:
-    x1,x2=quadratic(a,b,c)
+    x1,x2=y
     print(x1,x2)
