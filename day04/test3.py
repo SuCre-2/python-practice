@@ -36,3 +36,5 @@ d = {'x':'A','y':'B','z':'C'}
 D=[k + '=' + v for k,v in d.items()]
 
 print(D)
+
+#在一个列表生成式中，for前面的if ... else是表达式，而for后面的if是过滤条件，不能带else
