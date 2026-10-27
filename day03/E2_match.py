@@ -58,3 +58,30 @@ match args:
     case _:
         print('无法识别的指令，请重新输入！')
 
+#还有一种直接理解的写法，其实匹配列表教的核心就只是一段：
+#case['gcc',file1.*files]:
+#也就是出现gcc以后，第二个文件/元素，我单拿出来放进去file1这个变量
+#而其他组内变量全部打包进files
+#后续我就可以选择把file1这个变量返回输出给用户
+#其他的再做打算，可以返回输出，也可以再做别的处理
+#核心作用就是一一匹配上变量，给case去判断
+#结合以下代码理解：
+# file1 = ''
+# files = []
+# args = ['gcc', 'hello.c', 'world.c', 'aaa', 'bbb']
+# match args:
+# 	case ['gcc']:
+# 		print('gcc')
+# 	case ['gcc', file1, *files]:
+# 		print('222')
+# 	case ['clean']:
+# 		print('clean')
+# 	case _:
+# 		print('invalid command')
+# print('file1:' + file1)
+# print('files:', files)
+
+# 输出结果：
+# 222
+# file1:hello.c
+# files: ['world.c', 'aaa', 'bbb']
