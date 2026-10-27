@@ -63,6 +63,7 @@ def main():
     print('是否及格:', score.is_pass())
 
 
-if __name__ == '__&#8203;main__':
+if __name__ == '__main__':
+
     # 只有直接运行本文件才执行；被 import 时不会弹输入框
     main()
