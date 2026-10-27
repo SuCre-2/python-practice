@@ -7,8 +7,8 @@ class Dog(object):
         print(f'{self.name}在叫')
 
     def birthday(self):
-        self.age += 1
-        print(f'{self.name}过生日了，今年{self.age}岁')
+        self.__age += 1
+        print(f'{self.name}过生日了，今年{self.__age}岁')
 
     def get_age(self):
         return self.__age
