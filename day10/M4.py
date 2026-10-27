@@ -3,7 +3,7 @@ class Animal(object):
         self.name = name
 
     def speak(self):
-        return f'{self.name}在...叫'
+        return '...'
 
 class Dog(Animal):
     def __init__(self,name,age):
@@ -11,7 +11,7 @@ class Dog(Animal):
         self.__age = age
 
     def speak(self):
-        return f'{self.name}在汪汪叫'
+        return '汪汪'
 
     def get_age(self):
         return self.__age
@@ -23,7 +23,7 @@ class Dog(Animal):
 
 class Cat(Animal):
     def speak(self):
-        return f'{self.name}在喵喵叫'
+        return '喵'
 
 class GuideDog(Dog):
     pass
