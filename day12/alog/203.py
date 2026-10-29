@@ -21,3 +21,18 @@ class Solution:
             cur = cur.next             # cur 始终前进
 
         return dummy.next             # 不能 return head
+
+class Solution:
+    def r2(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
+        # 第一段：把开头连续等于 val 的节点剥掉，head 直接后移
+        while head and head.val == val:
+            head = head.next
+
+        # 第二段：此时 head 要么是 None，要么是第一个确定保留的节点
+        cur = head
+        while cur and cur.next:
+            if cur.next.val == val:
+                cur.next = cur.next.next     # 跳过下一个，cur 自己不动
+            else:
+                cur = cur.next
+        return head
