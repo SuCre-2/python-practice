@@ -17,3 +17,5 @@ while True:
     else:
         print(f"输入正确：{n}")
         break
+    finally:
+        print('?')
