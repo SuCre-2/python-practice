@@ -1,0 +1,10 @@
+the,9
+dog,6
+fox,5
+and,5
+easy,4
+lazy,3
+python,3
+jumps,2
+every,2
+day,2

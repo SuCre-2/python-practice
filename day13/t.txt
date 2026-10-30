@@ -1,0 +1,6 @@
+The quick brown fox jumps over the lazy dog. 
+The dog, however, was not lazy at all; 
+the dog barked and the fox ran away. 
+Fox and dog, dog and fox - they play together every day. 
+Every day the same story: the fox jumps, the dog barks, and the lazy afternoon passes by. Python is a great language, and python makes counting words easy. 
+Easy words, easy counting, easy python.
