@@ -34,3 +34,13 @@ with open('data.json', 'r', encoding='utf-8') as f:
     back = json.load(f)
 
 print(back == d)      # True
+
+# 记事本打开
+# {
+#   "name": "旺财",
+#   "age": 3,
+#   "tricks": [
+#     "sit",
+#     "roll"
+#   ]
+# }
